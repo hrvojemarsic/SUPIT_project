@@ -1,0 +1,491 @@
+#campusPic{
+    height: 100%;
+    width: 100vw;
+    object-fit: cover;
+}
+
+#topPage{
+    animation: flying 1s ease forwards;
+    position: relative;
+    height:20vw;
+    transform:translateY(-100%);
+    -webkit-transform: translateY(-100%);
+}
+
+@keyframes flying {
+    to {
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+    }
+}
+
+#headerDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: flyingUp 1s ease forwards;
+    position:relative;
+    transform:translateY(34%);
+    -webkit-transform: translateY(34%);
+    height: 13vw;
+}
+
+@keyframes flyingUp {
+    to {
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+    }
+}
+
+#headerDiv h1{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.75vw;
+    border-bottom:darkorange 0.15vw solid;
+    padding: 1.5vw;
+    width: 39vw;
+}
+
+.subtitles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 6vw;
+}
+
+.subtitles h2{
+    padding-top: 4vw;
+    margin-top: -4vw;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2vw;
+    color:purple;
+}
+
+.textDiv{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.textDiv p{
+    width:69vw;
+    font-family: 'Dancing Script', cursive;
+    padding-top: 2.5vw;
+    font-size: 1.7vw;
+}
+
+.textDiv p:nth-child(2) {
+    padding-bottom: 2.5vw;
+}
+
+.articlesContainerDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.articlesDiv{
+    display: flex;
+    justify-content: center;
+    padding-top: 1.75vw;
+}
+
+#articlesByYear{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 27.2vw 27.2vw 27.2vw;
+    justify-content: center;
+}
+
+.articlesDiv article{
+    width: 25vw;
+    padding:0.5vw;
+    margin: 0.5vw;
+    border: 0.5px black solid;
+}
+
+.articlesDiv article h3{
+    margin:0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.25vw;
+    color:gray;
+    padding-bottom: 1vw;
+    border-bottom: 0.5px solid darkgray;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.year{
+    color:blue;
+    margin-right: 1vw;
+}
+
+.articlesDiv article p, #picGrid article p{
+    font-family: Tahoma, sans-serif;
+    font-size: 1vw;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.75vw;
+    padding-bottom: 1vw;
+    margin: 0.5vw;
+}
+
+#picGrid
+{
+    padding-top: 1.75vw;
+    display: grid;
+    grid-template-rows: 15vw 15vw;
+    grid-template-columns: 21vw 21vw 21vw 21vw;
+    justify-content: center;
+}
+
+#picGrid article{
+    height:14vw;
+    width: 20vw;
+    padding:0.5vw;
+    margin: 0.5vw;
+}
+
+#picGrid h3{
+    margin:0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2vw;
+    color:gray;
+    padding-bottom: 0.5vw;
+    border-bottom: 0.5px solid darkgray;
+}
+
+#picGrid article img{
+    width: auto;
+    height: 5vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1vw;
+}
+
+#background{
+    width:100vw;
+    height: auto;
+    background-image:url("/images/kakoDoNas.jpg") ;
+    background-size: 100vw 50vw;
+}
+
+#location{
+    padding-top: 5vw;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 35vw 35vw;
+    justify-content: center;
+}
+
+.howToReachUsDiv{
+    height:28vw;
+    width: 30vw;
+    background-color:whitesmoke;
+    border: 0.7px solid black;
+    padding:1.5vw;
+    margin:1vw;
+    padding-bottom: 5vw;
+}
+
+.howToReachUsDiv article p{
+    padding-top: 0.5vw;
+    display: block;
+    margin-left: 8%;
+    margin-right: 8%;
+    font-size: 0.90vw;
+    font-family: Tahoma, sans-serif;
+}
+
+.howToReachUsDiv article h3{
+    padding-top: 0.25vw;
+    font-family: 'Oswald', sans-serif;
+    color:navy;
+    font-size: 1.7vw;
+}
+
+#googleMap{
+    overflow:hidden;
+    position:relative;
+    height:0;
+    padding-bottom: 30%;
+}
+
+#googleMap iframe{
+    top:3%;
+    left: 14.3%;
+    height:27vw;
+    width:70vw;
+    position:absolute;
+}
+
+
+@media only screen and (max-width: 768px){
+    #topPage{
+        display: none;
+    }
+
+    #headerDiv{
+        animation: none;
+        height: 15vh;
+    }
+
+    #headerDiv h1{
+        width: 60vw;
+        font-size: 9vh;
+        padding: 1vh;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .subtitles{
+        padding-top: 10vh;
+        margin-bottom: 4vh;
+    }
+
+    .subtitles h2{
+        font-size: 5vh;
+        padding-top: 40vw;
+        margin-top: -40vw;
+    }
+
+    .textDiv p{
+        font-size: 4vh;
+        width: 85vw;
+        text-align: center;
+    }
+
+    .articlesContainerDiv{
+        align-items: center;
+    }
+
+    .articlesDiv{
+        flex-flow: wrap;
+        width: 85vw;
+    }
+
+    #articlesByYear{
+        width: inherit;
+        flex-wrap: wrap;
+        height: auto;
+        padding: 0.8vw;
+        grid-template-columns: 90vw;
+        grid-template-rows: auto;
+    }
+
+    .articlesDiv article{
+        width: inherit;
+    }
+
+    #picGrid article,
+    #location article{
+        width: inherit;
+        height: auto;
+        padding: 0.8vw;
+        margin-left: 0;
+    }
+
+    .howToReachUsDiv{
+        width: inherit;
+        height: auto;
+        margin-bottom: 2vh;
+        margin-left: 0;
+    }
+
+    .howToReachUsDiv article p{
+        font-size: 2.5vh;
+        line-height: 4vh;
+        padding: 1vw;
+    }
+
+    .howToReachUsDiv article h3{
+        font-size: 4vh;
+        text-align: left;
+    }
+
+    .howToReachUsDiv article h3 img{
+        display: none;
+    }
+
+    .howToReachUsDiv article h3 i{
+        display: none;
+    }
+
+    .articlesDiv article h3,
+    #picGrid article h3{
+        font-size: 4vh;
+        text-align: left;
+    }
+
+    .articlesDiv article p{
+        font-size: 2.5vh;
+        line-height: 4vh;
+        padding: 1vw;
+    }
+
+    #picGrid,
+    #location{
+        grid-template-columns: 90vw;
+        grid-template-rows: auto;
+    }
+
+    .year{
+        margin-right: 0.05vw;
+    }
+    
+    #picGrid article img{
+        width: auto;
+        height: 15vw;
+        padding-top: 1vw; 
+    }
+
+    #googleMap{
+        padding-bottom: 60%;
+    }
+
+    #googleMap iframe{
+        left: 5vw;
+        height: 50vw;
+        width: 90vw;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px){
+    #rightBar{
+        display:none;
+    }
+
+    #topPage{
+      display:none;
+    }
+
+    #headerDiv{
+        margin-top: 8vh;
+        animation: none;
+        margin-bottom:15vh;
+    }
+
+    #headerDiv h1{
+        width: 70vw;
+        font-size: 9vh;
+    }
+    
+    .subtitles{
+        margin-top: 4vh;
+    }
+
+    .subtitles h2{
+        font-size: 8vh;
+        padding-top: 50vw;
+        margin-top: -50vw;
+        margin-bottom: 5vh;     
+    }
+
+    .textDiv p{
+        font-size: 5vh;
+        width: 75vw;
+        text-align: center;
+    }
+    
+    .articlesContainerDiv{
+        align-items: center;
+    }
+    
+    .articlesDiv{
+        flex-flow: wrap;
+        width: 75vw;
+    }
+
+    #articlesByYear{
+        width: inherit;
+        height: auto;
+        padding: 0.8vw;
+        grid-template-columns: 75vw;
+        grid-template-rows: auto;
+    }
+    
+    .articlesDiv article{
+        width: inherit;
+    }
+    
+    #picGrid article,
+    #location article{
+        width: inherit;
+        height: auto;
+        padding: 0.8vw;
+        margin-left: 0;
+    }
+    
+    .howToReachUsDiv{
+        width: inherit;
+        height: auto;
+        margin-bottom: 2vh;
+        margin-left: 0;
+    }
+    
+    .howToReachUsDiv article p{
+        font-size: 2.5vh;
+        line-height: 4vh;
+        padding: 1vw;
+    }
+    
+    .howToReachUsDiv article h3{
+        font-size: 4vh;
+        text-align: left;
+    }
+    
+    .howToReachUsDiv article h3 img{
+        display: none;
+    }
+    
+    .howToReachUsDiv article h3 i{
+        display: none;
+    }
+
+    .articlesDiv article h3,
+    #picGrid article h3{
+        font-size: 4vh;
+        text-align: left;
+    }
+    
+    .articlesDiv article p{
+        font-size: 2.5vh;
+        line-height: 4vh;
+        padding: 1vw;
+    }
+    
+    #picGrid,
+    #location{
+        grid-template-columns: 75vw;
+        grid-template-rows: auto;
+    }
+    
+    .year {
+        margin-right: 0.05vw;
+    }
+    
+    #picGrid article img{
+        width: auto;
+        height: 15vw;
+        padding-top: 1vw; 
+    }
+
+    #googleMap{
+        padding-bottom: 60%;
+    }
+    
+    #googleMap iframe{
+        left: 12.4vw;
+        height: 50vw;
+        width: 75vw;
+    }
+}

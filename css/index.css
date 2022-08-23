@@ -1,0 +1,130 @@
+body{
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#myVideo{
+    width: 100vw;
+    top:50%;
+    left:50%;
+}
+
+#background{
+    display: none;
+}
+
+#foot_placeholder{
+    display: none;
+}
+
+#container{
+	text-align: center;
+}
+
+#text1{
+	display: inline-block;
+	vertical-align: middle;
+	color: whitesmoke;
+    font-family: 'Oswald', sans-serif;
+	letter-spacing: 2px;
+    font-size: 5vw;
+    text-shadow: 0 0  1vw black;
+}
+
+#text2{
+    display: inline-block;
+	vertical-align: middle;
+	color: whitesmoke;
+    font-family: 'Oswald', sans-serif;
+	letter-spacing: 2px;
+    font-size: 5vw;
+    text-shadow: 0 0  1vw black;
+    margin-left: 1vw;
+}
+
+#text3{
+    display: inline-block;
+	vertical-align: middle;
+	color: red;
+    font-family: 'Oswald', sans-serif;
+	letter-spacing: 2px;
+    font-size: 5vw;
+    text-shadow: 0 0  1vw darkred;
+    margin-left: 1vw;
+}
+
+#cursor1, #cursor2{
+	display: inline-block;
+	vertical-align: middle;
+	width: 1vw;
+	height: 7vh;
+	background-color: whitesmoke;
+	animation: blink .75s step-end infinite;
+}
+
+#anim,#anim2{
+    width: 60vw;
+}
+
+#rightNavUl{
+    visibility: hidden;
+}
+
+@keyframes blink {
+	from, to { 
+		background-color: transparent 
+	}
+	50% { 
+		background-color: whitesmoke; 
+	}
+}
+
+
+@media only screen and (max-width: 768px) {
+    #background{
+        display: flex;
+        flex-direction: column;
+        padding-top: 50%;
+        padding-bottom: 50%;
+    }
+
+    #background img{
+        width: 100vw;
+        height: auto;
+    }
+
+    #myVideo{
+        display:none;
+    }
+    
+    #foot_placeholder{
+        display:block;
+        position:fixed;
+        bottom: 0;
+        height: 40vh;
+        width: 100vw;
+        padding-top: 15vh;
+    }
+
+    #anim,#anim1{
+        display: none;
+    }
+
+    #rightNavUl{
+        visibility: hidden;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+    body {
+        background-color: black;
+    }
+
+    #myVideo {
+        height: 100vh;
+    }
+
+    #rightNavUl {
+        visibility: hidden;
+    }
+}

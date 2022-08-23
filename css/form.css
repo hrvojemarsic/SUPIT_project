@@ -1,0 +1,70 @@
+.no-close .ui-dialog-titlebar-close {
+    display: none;
+}
+
+.ui-dialog-titlebar{
+    font-family:'Oswald', sans-serif;
+    color: aqua;
+    font-size: 20px;
+}
+
+label[for=name], label[for=email], label[for=importance], label[for=message]{
+    font-family:'Oswald', sans-serif;
+    font-size: 17px;
+}
+
+label[for=newsletter]{
+    display: inline;
+    font-family:'Oswald', sans-serif;
+    font-size: 17px;
+}
+
+#name, #email{
+    border: 1px solid aqua;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+textarea{
+    border: 1px solid aqua;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+select{
+    height: 30px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#newsletter{
+    margin-left: 5px;
+}
+
+#buttons{
+margin-top: 4%;
+padding-left: 10%;
+}
+
+input[type=submit]{
+   background-color: blue;
+   color: white;
+   height: 40px;
+   width: 100px;
+   border-radius: 7%;
+   margin-right: 20px;
+}
+
+input[type=button]{
+    background-color: red;
+    color: white;
+    height: 40px;
+    width: 100px;
+    border-radius: 7%;
+    margin-right: 20px;
+ }

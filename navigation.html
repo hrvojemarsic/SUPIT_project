@@ -1,0 +1,108 @@
+<a href="index.html">
+    <img id="logoAlgebra" src="images/Algebra-logo.png" alt="Algebra logo" />
+</a>
+<ul id="leftNavUl">
+  <li>
+    <a href="index.html">
+      <i class="bi bi-house-door"></i>
+      Početna
+    </a>
+  </li>
+  <li>
+    <a href="aboutUs.html">
+      <i class="bi bi-chat-square-text"></i>
+      O nama
+      </a>
+  </li>
+  <li>
+    <a href="news.html">
+      <i class="bi bi-info-circle-fill"></i>
+      Novosti
+    </a>
+  </li>
+  <li>
+    <a href="curriculum.html">
+      <i class="bi bi-info-circle-fill"></i>
+      Nastavni plan
+      </a>
+  </li>
+  <li>
+    <a href="#" id="contact">
+      <i class="bi bi-envelope"></i>
+      Kontakt forma
+    </a>
+    </a>
+    <div id="contactDialog">
+        <form id="contactForm" method="post" action="http://www.fulek.com/VUA/SUPIT/ContactUs">
+            <label for="name">Ime i prezime:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="importance">Važnost poruke:</label>
+            <select name="importance">
+                <option value="high" selected>Visoka</option>
+                <option value="low">Niska</option>
+            </select>
+            <label for="message">Unesite poruku:</label>
+            <textarea name="message" rows="10" cols="75"></textarea>
+            <label for="newsletter">Želite li primati newsletter?</label>
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <div id="formDivBtns">
+                <input type="submit" value="Pošalji">
+                <input type="button" value="Odustani" onclick="Cancel()">
+            </div>
+        </form>
+    </div>
+  </li>
+</ul>
+
+<ul id="rightNavUl" class="slideIn">
+    <li>
+        <a href="#ourValues">Naše vrijednosti</a>
+    </li>
+    <li>
+        <a href="#history">Povijest</a>
+    </li>
+    <li>
+        <a href="#algebraGroup">Algebra grupa</a>
+    </li>
+    <li>
+        <a href="#directions">Kako do nas</a>
+    </li>
+</ul>
+
+<script>
+    $(document).ready(function() {
+        $("#closeTogg").click(function() {
+            if($("#closeTogg").text() == "☰") {
+                $("#closeTogg").text("X");
+            } else {
+                $("#closeTogg").text("☰");
+            }
+
+            $("#navDiv").toggle("slow");
+        });
+    });
+
+    $("#contactDialog").dialog({
+        autoOpen: false,
+        dialogClass: "no-close",
+        title: "Kontaktirajte nas",
+        width: 500,
+        open: function(e, ui) {
+            $(".ui-dialog-titlebar").append(`<img src="images/icons8-envelope-24.png" id="envelopeIcon" />`);
+        },
+        close: function(e, ui) {
+            $("#envelopeIcon").remove();
+        },
+        modal: true,
+    });
+
+    $("#contact").click(function() {
+        $("#contactDialog").dialog("open");
+    });
+
+    function Cancel() {
+        $("#contactDialog").dialog("close");
+    }
+</script>

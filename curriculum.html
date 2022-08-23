@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SUPIT projekt Hrvoje Maršić - nastavni plan</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Stranica nastavnog plana" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="jquery-ui-dist/jquery-ui.min.css" />
+    <link rel="stylesheet" href="css/curriculum.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/rightBar.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+
+    <script src="jquery-ui-dist/external/jquery/jquery.js"></script>
+    <script src="jquery-ui-dist/jquery-ui.min.js"></script>
+  </head>
+
+  <body>
+    <div id="btnDiv">
+      <button id="closeTogg">X</button>
+    </div>
+    <div id="navDiv">
+      <div id="nav_placeholder"></div>
+    </div>
+    <script src="js/navigation.js"></script>
+
+    <div id="mainDiv">
+      <h1>Nastavni plan</h1>
+    </div>
+    <div id="searchDiv">
+      <div id="search">
+        <label for="autocompleteSearch">Naziv kolegija: </label>
+        <input
+          id="autocompleteSearch"
+          type="text"
+          placeholder="Započnite unos naziva kolegija..."
+        />
+      </div>
+      <div id="tableDiv">
+        <table id="tblSubjects">
+          <thead id="tblHead"></thead>
+          <tbody id="tblBody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="foot_placeholder"></div>
+    <script src="js/footer.js"></script>
+    <script src="js/curriculum.js"></script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+#videoDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5vw;
+    padding-top: 2vw;
+}
+
+#galDiv{
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    grid-template-rows: auto;
+    grid-template-columns: 19.5vw 19.5vw;
+    padding-top: 3vw;
+}
+
+.small{
+    width:19vw;
+}
+
+#worldSkillsVideo{
+    width: 40vw;
+    height: auto;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px){
+    #galDiv{
+    grid-template-columns: 39vw 39vw;
+    padding-top: 3vw;
+    }
+    
+    .small{
+    width:38vw;
+    height: auto;
+    }
+    
+    #worldSkillsVideo{
+    width: 60vw;
+    height: auto;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    #galDiv{
+        grid-template-columns: 47vw 47vw;
+    }
+
+    .small{
+        width:45vw;
+    }
+
+    #worldSkillsVideo{
+        width: 70vw;
+        height: auto;
+    }
+}

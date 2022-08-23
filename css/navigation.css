@@ -1,0 +1,177 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#navDiv{
+    position: fixed;
+    height: 5vh;  
+    width: 100vw;
+    font-size: 2.5vh;
+    background-color: black;
+    z-index: 1;
+}
+
+#nav_placeholder{
+    position: relative;
+    display: flex;
+    height: 5vh; 
+    align-items: center;
+}
+
+#logoAlgebra{
+    height: auto;
+    width: 3vh;
+    margin: 0 1vw 0;
+}
+
+ul{
+   list-style: none;
+   display: flex;
+}
+
+#leftNavUl li i{
+    margin-right: 0.5vh;
+}
+
+li a{
+    text-decoration: none;
+    color: darkorange;
+    margin-right: 1vw;
+}
+
+li a:hover{
+    color: magenta;
+}
+
+#btnDiv{
+    display: none;
+    border-bottom: 2px solid;
+}
+
+#rightNavUl{
+    position: absolute;
+    right: 1vw;
+}
+
+label[for=autocompleteSearch]{
+    font-size:3vh;
+    font-family:'Oswald', sans-serif;
+}
+
+
+@media only screen and (max-width: 768px) {
+    #navDiv{
+        height: auto;
+    }
+
+    #nav_placeholder{
+        height:auto;
+    }
+
+    #leftNavUl{
+        height:auto;
+        flex-direction: column;
+        margin: 0;
+    }
+    
+    #logoAlgebra{
+        display:none;
+    }
+
+    #leftNavUl li{
+      display: block;
+      width: 100vw;
+      border-top: darkorange 1px solid;
+      margin-left: 0vw;
+      font-size: 5vh;
+
+    }
+    
+    #leftNavUl li:hover{
+       background-color:darkgrey;
+    }
+
+    #navDiv{
+        flex-direction: column;
+        background-color: black;
+        padding-top: 7vh;
+    }
+
+    #closeTogg{
+        display: block;
+        height: 7vh;
+        width: 15vw;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 900;
+        border:none;
+        outline: none;
+        background-color: darkorange;
+        color: white;
+        text-shadow: 0 0 1vw whitesmoke;
+        cursor: pointer;
+        font-size: 1.85vh;
+        position: fixed;
+        z-index: 2;
+    }
+
+    #btnDiv{
+        width: 100vw;
+        display:flex;
+        justify-content:flex-end;
+        align-items:center;
+        width:100%;
+        height: 7vh;
+        background-color: black;
+        position:fixed;
+        z-index: 2;
+    }
+
+    #rightNavUl{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px){
+    #navDiv{
+        width: 10vw;
+        height: 100vh;
+        background-color: black;
+    }
+
+    #logoAlgebra{
+        display: none;
+    }
+
+    #leftNavUl{
+        flex-direction: column;
+        margin: 0;
+        height: auto;
+        width: 10vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
+
+    #nav_placeholder{
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    #leftNavUl li{
+        font-size: 7vw;
+        margin-left: 2vw;
+        margin-top: 2vh;
+    }
+
+    #leftNavUl li .linkClass{
+        display: none;
+    }
+
+    #rightNavUl{
+        display: none;
+    }
+}

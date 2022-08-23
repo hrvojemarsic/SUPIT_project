@@ -1,0 +1,117 @@
+.slideIn{
+    transform:translateX(110%);
+    -webkit-transform: translateX(110%);
+    animation: flyin 0.7s ease forwards;
+    animation-delay: 1.1s;
+    animation-fill-mode: forwards; 
+    text-decoration: none;
+}
+
+#mobileRightBar{
+    display:none;
+}
+
+@keyframes flyin {
+
+    90% {
+        transform: translateX(-2%);
+        -webkit-transform: translateX(-2%);
+    }
+
+    100% {
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    #mobileRightBar{
+        display: block;
+        position: fixed;
+        z-index: 1;
+        height: 10vh;  
+        width: 100vw;
+        padding-top: 0.75vh;
+        background-color: black;
+        bottom: 0;
+    }
+
+    #wrapper{
+        display:flex;
+        align-items:center;
+        height: 10vh;  
+        width: 100vw;
+    }
+
+    #wrapper ul{
+        list-style: none;
+        display:flex;
+        width: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+    }
+    
+    #wrapper ul li{
+        font-size: 6vh;
+        margin: 4vw;
+        padding-bottom: 1vw;
+    }
+
+    #wrapper ul li a{
+        color: magenta;
+    }
+    
+    #wrapper ul li a:hover{
+        color: white;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1200px){
+    #mobileRightBar{
+        display: block;
+        position: fixed;
+        z-index: 1;
+        height: 8vh;  
+        width: 100vw;
+        padding-top: 0.75vh;
+        background-color: black;
+        top: 0;
+    }
+
+    #wrapper{
+        display:flex;
+        align-items:center;
+        height: 10vh;  
+        width: 100vw;
+    }
+
+    #wrapper ul{
+        list-style: none;
+        display:flex;
+        width: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+    }
+    
+    #wrapper ul li{
+        font-size: 6vh;
+        margin: 4vw;
+        padding-bottom: 1vw;
+    }
+
+    #wrapper ul li a{
+        color: magenta;
+    }
+
+    #wrapper ul li a:hover{
+        color: white;
+    }
+}
