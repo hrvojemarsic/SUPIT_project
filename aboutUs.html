@@ -33,15 +33,16 @@
 
     <script src="jquery-ui-dist/external/jquery/jquery.js"></script>
     <script src="jquery-ui-dist/jquery-ui.min.js"></script>
-    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <!-- <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script> -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
   </head>
 
   <body>
     <div id="btnDiv">
-      <button id="closeTogg">X</button>
+      <button id="closeTogg">☰</button>
     </div>
-    <div id="navDiv">
-      <div id="nav_placeholder"></div>
+    <div id="navDiv" style="display: none">
+      <nav id="nav_placeholder"></nav>
     </div>
     <script src="js/navigation.js"></script>
 
@@ -58,11 +59,12 @@
     </div>
     <div class="subtitles">
       <h2>
-        <span
+        <!-- <span
           class="iconify"
           data-icon="mdi-lightning-bolt"
           data-inline="false"
-        ></span>
+        ></span> -->
+        <iconify-icon icon="mdi:lightning-bolt"></iconify-icon>
         Naše vrijednosti
       </h2>
     </div>
@@ -455,18 +457,17 @@
       </div>
     </div>
 
-    <div id="foot_placeholder"></div>
     <div id="mobileRightBar">
-      <nav id="wrapper">
-        <ul>
+        <ul id="wrapper">
           <li>
             <a href="#ourValues">
-              <span
+              <iconify-icon icon="mdi:lightning-bolt"></iconify-icon>
+              <!-- <span
                 class="iconify"
                 data-icon="mdi-lightning-bolt"
                 data-inline="false"
               >
-              </span>
+              </span> -->
             </a>
           </li>
           <li>
@@ -485,8 +486,9 @@
             </a>
           </li>
         </ul>
-      </nav>
     </div>
+    
+    <div id="foot_placeholder"></div>
     <script src="js/footer.js"></script>
   </body>
 </html>
