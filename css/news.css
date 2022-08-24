@@ -48,10 +48,8 @@
 
 #picsDiv div{
     width: 32vw;
-    height: auto;
+    height: 75vh;
     overflow: hidden;
-    padding-top: 3vw;
-    padding-bottom: 3.9vw;
     position: relative;
     animation: appear 0.75s ease forwards;
     animation-fill-mode: forwards;
@@ -60,47 +58,33 @@
     filter:blur(4px);
 }
 
-.pic {
-    display: block;
-    margin: 0 auto;
-    height: auto;
+#picsDiv div img{
     width: 75%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+    height: 75%;
     border-radius: 50%;
-    border: solid 1.7vw white;
-    box-shadow: 0 0 30px 0.75vw grey;
-    cursor:pointer;
+    object-fit: fill;
+    margin: 2vh 5vw 2vh;
+    border: 1vh solid whitesmoke;
+    box-shadow: 10px 10px 30px gray;
 }
 
 h2{
-    font-size: 1.25vw;
-    width: 15vw;
+    font-size: 1.5vw;
     position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 0.1vw;
+    top: 10%;
+    left: 40%;
     color:yellow;
     text-align: center;
-    cursor:pointer;
 }
 
 h3{
-    font-size: 1.25vw;
-    width: 15vw;
+    font-size: 1vw;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 40%;
+    left: 52%;
     transform: translate(-50%, -50%);
     color: white;
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 0.1vw;
     text-align: center;
-    cursor:pointer;
 }
 
 #picsDiv div:hover h2,#picsDiv div:hover h3{
@@ -114,7 +98,11 @@ h3{
 
 @media only screen and (max-width: 768px) {
     #mainDiv{
-        display: none;
+        padding-top: 10vh;
+    }
+
+    #mainDiv h1{
+        font-size: 3vh;
     }
 
     #picsDiv
@@ -137,16 +125,20 @@ h3{
 
     h2{
         font-size: 3vh;
-        width: auto;
-        top: 30%;
+        top: 10%;
+        left: 33%;
     }
 
     h3{
         font-size: 2vh;
-        width: auto;
-        top: 60%;
-        left: 50%;
+        top: 45%;
+        left: 45%;
     }
+
+    #picsDiv div:hover h2,#picsDiv div:hover h3{
+        font-size: 2.5vh; 
+    }
+    
 
     #foot_placeholder{
         display: none;
@@ -160,7 +152,13 @@ h3{
 
 @media only screen and (min-width: 769px) and (max-width: 1200px){
     #mainDiv{
-     display: none;
+        display: block;
+        padding-top: 10vh;
+    }
+
+    #mainDiv h1{
+        margin-right: auto;
+        margin-left: auto;
     }
 
     #picsDiv
@@ -182,16 +180,20 @@ h3{
 
     h2{
         font-size: 5vh;
-        width: auto;
-        top: 30%;
+        top: 10%;
+        left: 35%;
     }
 
     h3{
         font-size: 3vh;
-        width: auto;
-        top: 60%;
-        left: 50%;
+        top: 40%;
+        left: 45%;
     }
+    
+    #picsDiv div:hover h2,#picsDiv div:hover h3{
+        font-size: 4vh; 
+    }
+
 
     #foot_placeholder{
         display: none;

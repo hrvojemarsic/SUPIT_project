@@ -26,6 +26,9 @@
 
 
 @media only screen and (max-width: 768px) {
+    #navDiv{
+        display: none;
+    }
     #mobileRightBar{
         width: 80vw;
         height: 8vh;
@@ -42,7 +45,7 @@
         right: 1vw;
         height: 8vh;
         position: absolute;
-        font-size: 8vw;
+        font-size: 5vh;
         z-index: 2;
     }
 }

@@ -81,6 +81,9 @@ body{
 
 
 @media only screen and (max-width: 768px) {
+    #navDiv{
+        display: none;
+    }
     #background{
         display: flex;
         flex-direction: column;

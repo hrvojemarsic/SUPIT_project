@@ -1,16 +1,16 @@
-#topNewsDiv{    
+#topNewsDiv{
     animation: flying 1s ease forwards;
-    position:relative;
-    height:34vw;
-    width:100vw;
-    transform:translateY(-100%);
+    position: relative;
+    width: 100vw;
+    height: 40vh;
+    transform: translateY(-100%);
     -webkit-transform: translateY(-100%);
 }
 
 #topNews{
-    width: 100%;
+    width: 100vw;
     height: 100%;
-    object-fit: fill;
+    object-fit: cover;
 }
 
 @keyframes flying {
@@ -98,6 +98,7 @@
     }
 
     #topNewsDiv{
+        padding-top: 10vh;
         animation: none;
         height:auto;
         transform:translateY(0%);
@@ -105,9 +106,7 @@
     }
 
     #topNewsDiv p{
-        font-size: 5vw;
-        width: 50vw;
-        text-align: center;
+        font-size: 4vh;
     }
 
     #mainDiv{

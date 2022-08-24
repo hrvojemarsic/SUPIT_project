@@ -10,6 +10,8 @@
     height: 5vh;  
     width: 100vw;
     font-size: 2.5vh;
+    z-index: 1;
+    background-color: black;
 }
 
 #nav_placeholder{
@@ -111,7 +113,7 @@ li a:hover{
         background-color: darkorange;
         color: white;
         cursor: pointer;
-        font-size: 8vw;
+        font-size: 5vh;
         position: fixed;
         z-index: 2;
     }
@@ -140,11 +142,10 @@ li a:hover{
 
     #leftNavUl{
         flex-direction: row;
-        margin: 0;
+        max-width: 1200px;
+        margin: 0 auto 0;
         height: auto;
-        width: 100vw;
         position: absolute;
-        left: 20vw;
     }
 
     #nav_placeholder{
@@ -152,14 +153,14 @@ li a:hover{
     }
 
     #leftNavUl li{
-        font-size: 1vw;
+        font-size: 1vh;
         margin-left: 2vw;
         margin-top: 2vh;
         visibility: hidden;
     }
 
     #leftNavUl li a i{
-        font-size: 5vw;
+        font-size: 5vh;
         visibility: visible;
     }
 
