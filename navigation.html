@@ -22,13 +22,13 @@
   </li>
   <li>
     <a href="curriculum.html">
-      <i class="bi bi-info-circle-fill"></i>
+      <i class="bi bi-book-half"></i>
       Nastavni plan
       </a>
   </li>
   <li>
     <a href="#" id="contact">
-      <i class="bi bi-envelope"></i>
+      <i class="bi bi-envelope-fill"></i>
       Kontakt forma
     </a>
     </a>
@@ -58,17 +58,29 @@
 
 <ul id="rightNavUl" class="slideIn">
     <li>
-        <a href="#ourValues">Naše vrijednosti</a>
-    </li>
-    <li>
-        <a href="#history">Povijest</a>
-    </li>
-    <li>
-        <a href="#algebraGroup">Algebra grupa</a>
-    </li>
-    <li>
-        <a href="#directions">Kako do nas</a>
-    </li>
+          <a href="#ourValues">
+            <i class="bi bi-lightning-fill"></i>
+            Naše vrijednosti
+          </a>
+        </li>
+        <li>
+          <a href="#history">
+            <i class="bi bi-hourglass-bottom"></i>
+            Povijest
+          </a>
+        </li>
+        <li>
+          <a href="#algebraGroup">
+            <i class="bi bi-people-fill"></i>
+            Algebra grupa
+          </a>
+        </li>
+        <li>
+          <a href="#directions">
+            <i class="bi bi-compass-fill"></i>
+            Kako do nas
+          </a>
+        </li>
 </ul>
 
 <script>
@@ -90,7 +102,7 @@
         title: "Kontaktirajte nas",
         width: 500,
         open: function(e, ui) {
-            $(".ui-dialog-titlebar").append(`<img src="images/icons8-envelope-24.png" id="envelopeIcon" />`);
+            $(".ui-dialog-titlebar").append(`<i class="bi bi-envelope-paper-fill" id="envelopeIcon"></i>`);
         },
         close: function(e, ui) {
             $("#envelopeIcon").remove();

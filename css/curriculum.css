@@ -1,38 +1,7 @@
-#mainDiv{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    animation: flyingUp 1s ease forwards;
-    position:relative;
-    transform:translateY(34%);
-    -webkit-transform: translateY(34%);
-    height: 13vw;
-    padding-top: 5vh;
-}
-
-@keyframes flyingUp {
-    to {
-        transform: translateY(0%);
-        -webkit-transform: translateY(0%);
-    }
-}
-
-#mainDiv h1{
-    text-align: center;
-    font-family: 'Oswald', sans-serif;
-    font-size: 2.75vw;
-    border-bottom: yellow 0.15vw solid;
-    padding: 1.5vw;
-    width: 39vw;
-}
-
-#autocompleteSearch {
-    font-family: 'Oswald', sans-serif;
+#autocompleteSearch{
     width: 30vw;
-    font-size: 1vw;
     padding: 0.25vw;
-    box-shadow: 0px 0px 0.5vw 0.15vw aqua;
+    box-shadow: 0px 0px 0.5vw 0.15vw magenta;
     margin-bottom: 1vw;
     margin-top: 1vw;
 }
@@ -44,35 +13,30 @@
     justify-content: center;
     height: auto;
     padding-bottom: 20vh;
-    padding-top: 5vw;
+    padding-top: 6vh;
 }
 
 #search{
-    width: 30.5vw;
+    width: 33vw;
     margin-left: 10vw
 }
 
-#headrow{
-    font-size: 1.2vw;
-    font-family:'Oswald', sans-serif;
+#tblSubjects{
+    width: 45vw;
+    border-collapse: collapse;
+}
+
+#tblSubjects td{
+    width: 15vw;
+}
+
+#tblHead{
     text-transform: capitalize;
     text-align: left;
 }
 
-#tblSubjects{
-    width:45vw;
-    border-spacing: 0;
-    border-collapse: collapse;   
-}
-
-#thead th:nth-of-type(2){
-    text-transform: uppercase;
-}
-
-.bodyrow{
-    font-family:'Oswald', sans-serif;
-    font-size: 1.10vw;
-    height: 2.5vw;
+#tblBody tr{
+    height: 8vh;
 }
 
 #btnRemove{
@@ -80,141 +44,31 @@
     border: none;
     border-radius: 15%;
     font-size: 0.8vw;
-    font-family: 'Oswald', sans-serif; 
     color:white;
     padding: 0.5vw 0.5vw;
     height: 2vw;
     cursor: pointer;
 }
 
-#tblBody .bodyrow:nth-child(even){
-    background-color: whitesmoke;
+#tblBody tr:nth-child(even){
+    background-color: darkorange;
 }
 
-#tblBody .bodyrow:nth-child(odd){
-    background-color:gray;
+#tblBody tr:nth-child(odd){
+    background-color:magenta;
 }
 
 #total{
-    border-top: black 2px solid;
+    border-top: white 2px solid;
+    font-weight: 900;
 }
 
 #total tr td:nth-child(2), #total tr td:nth-child(3){
     color: red;
-    font-weight: 900;
-    text-shadow: 0vw 0vw 0.05vw darkred;
-    font-size: 1.3vw;
 }
 
-#total tr td:nth-child(1){
-    font-size: 1.3vw;
-    font-family:'Oswald', sans-serif;
-}
-
-#rightNavUl{
-    visibility: hidden;
-}
-
-.ui-autocomplete li{
-    font-size: 1.5vh;
-    font-family:'Oswald', sans-serif;
-}
-
-
-@media only screen and (max-width: 768px) {
-    #foot_placeholder{
-        display: none;
-    }
-
-    #rightNavUl{
-        visibility: hidden;
-    }
-
-    #mainDiv{
-        animation:none;
-        height: auto;
-    }
-
-    #mainDiv h1{
-        font-size: 6vh;
-        padding-top: 7vh;
-    }
-
-    #searchDiv{
-        grid-template-rows: auto;
-        grid-template-columns: 90vw;
-        justify-content: center;
-        height: auto;
-        padding-top: 15vh;
-    }
-
-    #search{
-        width: auto;
-        margin-left: 0;
-    }
-
-    label{
-        width: 90vw;
-        font-size: 5vh;
-    }
-
-    #autocompleteSearch{
-        width: 90vw;
-        font-size: 4vh;
-    }
-
-    #tblSubjects{
-        margin-top: 4vh;
-        width:90vw; 
-    }
-
-    #headrow{
-        font-size: 1.5vh;
-    }
-
-    .bodyrow{
-        font-size: 2vh;
-        height: 9vh;
-    }
-
-    #btnRemove{
-        border-radius: 15%;
-        font-size: 2vh;
-        height: 5vh;
-        width: auto;
-    }
-
-    #total{
-        font-size: 4vw;
-    }
-
-    #total tr td:nth-child(2), #total tr td:nth-child(3){
-        font-size: 4vh;
-    }
-
-    #total tr td:nth-child(1){
-        font-size: 3vh;
-    }
-}
 
 @media only screen and (min-width: 769px) and (max-width: 1200px){
-    #foot_placeholder{
-        display: none;
-    }
-
-    #rightNavUl{
-        visibility: hidden;
-    }
-
-    #mainDiv{
-        animation:none;
-        height: auto;
-    }
-
-    #mainDiv h1{
-        font-size: 6vh;
-    }
-
     #searchDiv{
         grid-template-rows: auto;
         grid-template-columns: 75vw;
@@ -228,27 +82,13 @@
         margin-left: 0;
     }
 
-    label{
-        width: 85vw;
-        font-size: 5vh;
-    }
-
-    #autocompleteSearch{
-        width: 75vw;
-        font-size: 4vh;
-    }
-
+    #autocompleteSearch,
     #tblSubjects{
+        width: 75vw;
         margin-top: 4vh;
-        width:75vw; 
     }
 
-    #headrow{
-        font-size: 2vh;
-    }
-
-    .bodyrow{
-        font-size: 2.5vh;
+    #tblBody{
         height: 9vh;
     }
 
@@ -257,16 +97,37 @@
         font-size: 2vh;
         height: 6vh;
     }
+}
 
-    #total{
-        font-size: 4vh;
+
+@media only screen and (max-width: 768px) {
+    #searchDiv{
+        grid-template-rows: auto;
+        grid-template-columns: 90vw;
+        justify-content: center;
+        height: auto;
+        padding-top: 15vh;
     }
 
-    #total tr td:nth-child(2), #total tr td:nth-child(3){
-        font-size: 3vh;
+    #search{
+        width: auto;
+        margin-left: 0;
     }
 
-    #total tr td:nth-child(1){
-        font-size: 3vh;
+    #autocompleteSearch,
+    #tblSubjects{
+        width: 90vw;
+        margin-top: 2vh;
+    }
+
+    #tblBody{
+        font-size: 2vh;
+    }
+
+    #btnRemove{
+        border-radius: 15%;
+        font-size: 2vh;
+        height: 5vh;
+        width: auto;
     }
 }

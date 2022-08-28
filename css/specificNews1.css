@@ -12,12 +12,12 @@
     flex-direction: column;
     justify-content: center;
     grid-template-rows: auto;
-    grid-template-columns: 19.5vw 19.5vw;
+    grid-template-columns: 20vw 20vw;
     padding-top: 3vw;
 }
 
 .small{
-    width:19vw;
+    width: 20vw;
 }
 
 #worldSkillsVideo{
@@ -27,12 +27,12 @@
 
 @media only screen and (min-width: 769px) and (max-width: 1200px){
     #galDiv{
-    grid-template-columns: 39vw 39vw;
+    grid-template-columns: 40vw 40vw;
     padding-top: 3vw;
     }
     
     .small{
-    width:38vw;
+    width: 40vw;
     height: auto;
     }
     
@@ -44,7 +44,7 @@
 
 @media only screen and (max-width: 768px){
     #galDiv{
-        grid-template-columns: 47vw 47vw;
+        grid-template-columns: 45vw 45vw;
     }
 
     .small{

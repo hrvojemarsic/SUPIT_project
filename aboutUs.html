@@ -7,34 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Stranica o nama" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="jquery-ui-dist/jquery-ui.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/aboutUs.css" />
     <link rel="stylesheet" href="css/navigation.css" />
     <link rel="stylesheet" href="css/form.css" />
-    <link rel="stylesheet" href="css/rightBar.css" />
+    <link rel="stylesheet" href="css/rightNav.css" />
     <link rel="stylesheet" href="css/footer.css" />
 
     <script src="jquery-ui-dist/external/jquery/jquery.js"></script>
     <script src="jquery-ui-dist/jquery-ui.min.js"></script>
-    <!-- <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script> -->
-    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
   </head>
 
   <body>
@@ -55,16 +41,11 @@
     </div>
 
     <div id="headerDiv">
-      <h1 id="ourValues">O nama</h1>
+      <h1>O nama</h1>
     </div>
     <div class="subtitles">
-      <h2>
-        <!-- <span
-          class="iconify"
-          data-icon="mdi-lightning-bolt"
-          data-inline="false"
-        ></span> -->
-        <iconify-icon icon="mdi:lightning-bolt"></iconify-icon>
+      <h2 id="ourValues">
+        <i class="bi bi-lightning-fill" style="position: relative"></i>
         Naše vrijednosti
       </h2>
     </div>
@@ -130,7 +111,7 @@
 
     <div class="subtitles">
       <h2 id="history">
-        <i class="bi bi-arrow-counterclockwise" style="position: relative"></i>
+        <i class="bi bi-hourglass-bottom" style="position: relative"></i>
         Povijest
       </h2>
     </div>
@@ -360,7 +341,7 @@
 
     <div class="subtitles">
       <h2 id="directions">
-        <i class="bi bi-compas-fill" style="position: relative"></i>
+        <i class="bi bi-compass-fill" style="position: relative"></i>
         Kako do nas
       </h2>
     </div>
@@ -368,13 +349,10 @@
       <div id="location">
         <div class="howToReachUsDiv">
           <article>
-            <h3>
-              <img
-                src="https://img.icons8.com/fluent-systems-filled/24/4a90e2/navigation.png"
-                style="position: relative"
-              />
+            <h4>
+              <i class="bi bi-geo-alt-fill" style="position: relative"></i>
               Lokacija
-            </h3>
+            </h4>
             <p>
               Algebra se nalazi u okviru kampusa Hrvatskog katoličkog
               sveučilišta (HKS) u Zagrebu, na adresi Ilica 242. Ulaz u kampus
@@ -386,10 +364,10 @@
             </p>
           </article>
           <article>
-            <h3>
-              <i class="bi bi-compass" style="position: relative"></i>
+            <h4>
+              <i class="bi bi-compass-fill" style="position: relative"></i>
               Kako do nas?
-            </h3>
+            </h4>
             <p>
               Algebra je smještena u zapadnom dijelu grada Zagreba, na sto
               metara udaljenosti od tramvajske stanice Sv. Duh i na15-ak km
@@ -399,13 +377,13 @@
         </div>
         <div class="howToReachUsDiv">
           <article>
-            <h3>
-              <img
-                src="https://img.icons8.com/metro/26/4a90e2/bus.png"
+            <h4>
+              <i
+                class="bi bi-train-lightrail-front-fill"
                 style="position: relative"
-              />
+              ></i>
               Javni prijevoz
-            </h3>
+            </h4>
             <p>
               Od glavnog trga, Trga bana Jelačića, udaljena je 6 tramvajskih
               stanica vožnje, linijama 6 i 11 u smjeru Črnomerca. Od Glavnog
@@ -414,13 +392,10 @@
             </p>
           </article>
           <article>
-            <h3>
-              <img
-                src="https://img.icons8.com/material-rounded/24/4a90e2/car.png"
-                style="position: relative"
-              />
+            <h4>
+              <i class="bi bi-car-front-fill" style="position: relative"></i>
               Osobnim vozilom
-            </h3>
+            </h4>
             <p>
               Informacije o dolasku automobilom iz smjera Slavonska avenija
               dostupne su ovdje, iz smjera Zagrebačke avenije ovdje, a iz smjera
@@ -428,13 +403,10 @@
             </p>
           </article>
           <article>
-            <h3>
-              <img
-                src="https://img.icons8.com/metro/26/4a90e2/parking.png"
-                style="position: relative"
-              />
+            <h4>
+              <i class="bi bi-p-square-fill" style="position: relative"></i>
               Parking
-            </h3>
+            </h4>
             <p>
               Unutar kampusa posjetiteljima je na raspolaganju otvoreni parking
               koji se naplaćuje 4 kune po satu, dok se izvan kampusa nalazi III.
@@ -461,18 +433,12 @@
       <ul id="wrapper">
         <li>
           <a href="#ourValues">
-            <iconify-icon icon="mdi:lightning-bolt"></iconify-icon>
-            <!-- <span
-                class="iconify"
-                data-icon="mdi-lightning-bolt"
-                data-inline="false"
-              >
-              </span> -->
+            <i class="bi bi-lightning-fill"></i>
           </a>
         </li>
         <li>
           <a href="#history">
-            <i class="bi bi-arrow-counterclockwise"></i>
+            <i class="bi bi-hourglass-bottom"></i>
           </a>
         </li>
         <li>
